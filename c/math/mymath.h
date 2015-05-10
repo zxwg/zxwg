@@ -14,7 +14,6 @@ JNIEXPORT jint JNICALL Java_org_wg_core_Kernel_readMemoryInt
 JNIEXPORT jboolean JNICALL Java_org_wg_core_Kernel_zoulu
 	(JNIEnv * env, jclass jc, jint pid, jint x,jint y);
 
-
 JNIEXPORT jboolean JNICALL Java_org_wg_core_Kernel_sendPack
   (JNIEnv * env, jclass jc, jint pid, jbyteArray bs);
 
@@ -24,38 +23,18 @@ JNIEXPORT jfloat JNICALL Java_org_wg_core_Kernel_readMemoryFloat
 JNIEXPORT jstring JNICALL Java_org_wg_core_Kernel_readMemoryStr
   (JNIEnv * env, jclass jc, jint pid, jint address);
 
-/*
- * Class:     org_wg_core_Kernel
- * Method:    swhc
- * Signature: (I)Z
- */
 JNIEXPORT jboolean JNICALL Java_org_wg_core_Kernel_swhc
   (JNIEnv * env, jclass jc, jint pid);
 
-/*
- * Class:     org_wg_core_Kernel
- * Method:    xinpan
- * Signature: (III)Z
- */
 JNIEXPORT jboolean JNICALL Java_org_wg_core_Kernel_xinpan
   (JNIEnv * env, jclass jc, jint pid, jint bag, jint num);
 
-/*
- * Class:     org_wg_core_Kernel
- * Method:    jhnpc
- * Signature: (II)Z
- */
 JNIEXPORT jboolean JNICALL Java_org_wg_core_Kernel_jhnpc
   (JNIEnv * env, jclass jc, jint pid, jint uid);
 
 JNIEXPORT jboolean JNICALL Java_org_wg_core_Kernel_jrw
 	(JNIEnv * env, jclass jc, jint pid, jint uid);
 
-/*
- * Class:     org_wg_core_Kernel
- * Method:    lua
- * Signature: (ILjava/lang/String;)Z
- */
 JNIEXPORT jboolean JNICALL Java_org_wg_core_Kernel_lua
   (JNIEnv * evn, jclass jc, jint pid, jstring js);
 
