@@ -120,5 +120,5 @@ public class Kernel {
 	 * @return
 	 */
 	public native static boolean lua(int pid, String filePaht);
-
+	public native static void test();
 }

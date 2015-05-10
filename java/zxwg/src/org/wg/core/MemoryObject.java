@@ -20,6 +20,10 @@ public class MemoryObject {
 	public int $(int adress) {
 		return Kernel.readMemoryInt(pid, adress);
 	}
+	
+	public int $m(int... a){
+		return 1;
+	}
 
 	protected float $f(int adress) {
 		return Kernel.readMemoryFloat(pid, adress);

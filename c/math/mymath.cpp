@@ -462,3 +462,7 @@ JNIEXPORT jboolean JNICALL Java_org_wg_core_Kernel_closeNpc
 		InfusionFunc(pid,_closeNpc,NULL,NULL);
 		return true;
 }
+
+JNIEXPORT void JNICALL Java_org_wg_core_Kernel_test
+	(JNIEnv * env, jclass jc){
+}

@@ -43,6 +43,9 @@ JNIEXPORT jboolean JNICALL Java_org_wg_core_Kernel_trhy
 
 JNIEXPORT jboolean JNICALL Java_org_wg_core_Kernel_closeNpc
 	(JNIEnv * env, jclass jc,int pid);
+
+JNIEXPORT void JNICALL Java_org_wg_core_Kernel_test
+	(JNIEnv * env, jclass jc);
 #ifdef __cplusplus
 }
 #endif
