@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="OFF">
+	<appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="时间:%d{yyyy-MM-dd HH:mm:ss.SSS} 线程:[%t] 代码%L行  级别:%-5level - %n信息:%msg%n" />
+		</Console>
+	</appenders>
+	<loggers>
+		<root level="DEBUG">
+			<appender-ref ref="Console" />
+		</root>
+	</loggers>
+</configuration>
